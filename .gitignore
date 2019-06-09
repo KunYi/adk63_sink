@@ -29,6 +29,7 @@ apps/libs/hfp/hfp_parse.*
 
 
 flags.compile
+deploy_deploy.lst
 
 
 apps/applications/sink/qcc512x_qcc302x/common/depend_Headset_qcc512x_qcc302x/**
