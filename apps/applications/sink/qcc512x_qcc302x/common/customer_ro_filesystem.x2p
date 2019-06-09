@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project name="customer_ro_filesystem" path="" locked="no">
+    <file path="../../../../../audio/kalimba_ROM_4786/kymera/prebuilt_dkcs/stre_rom_v02_release/download_aptx_demux.edkcs"/>
+    <file path="../../../../../audio/kalimba_ROM_4786/kymera/prebuilt_dkcs/stre_rom_v02_release/download_switched_passthrough_consumer.edkcs"/>
+    <configurations defaultKit="kitres://{54bf1f98-0f7c-4619-aa3a-efc0d07fa8bb}">
+        <configuration name="filesystem" kit="kitres://{54bf1f98-0f7c-4619-aa3a-efc0d07fa8bb}" options="build|deploy|finalBuild|default">
+            <devkitConfiguration>filesystem</devkitConfiguration>
+            <devkitPath>../../../../../../../../../../qtil/ADK_QCC512x_QCC302x_WIN_6.3.0.154</devkitPath>
+            <devkitGroup>kitres://{bbac163c-41be-4ce7-b236-236f15ff18ca}</devkitGroup>
+            <deployProject>deploy</deployProject>
+            <devkitRevision>1535980931</devkitRevision>
+            <property name="FS_ROOT">..\customer_ro_filesystem</property>
+            <property name="QUICKCHARGE_CONFIG">../../quick_charge_config/smb1352_default.xml</property>
+            <property name="TYPE">customer_ro</property>
+            <property name="system_label">QCC512X_CONFIG</property>
+        </configuration>
+    </configurations>
+</project>
