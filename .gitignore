@@ -1,3 +1,51 @@
 *.bak
 *.user
 *.settings
+built_from
+
+# for Python precompile
+*.pyc
+
+# for C/C++ build
+*.o
+*.a
+*.d
+
+*.xuv
+
+*.log
+# for gaia_db
+gaia**_db.h
+gatt**_db.h
+
+config_definition.*
+**/common/build_id_str.c
+**/common/flags.configuration
+**/common/sedGUWNih
+**/common/**.mak
+apps/**/pskey_map.xml
+apps/**/**gatt_db.*
+apps/libs/hfp/hfp_parse.*
+
+
+flags.compile
+
+
+apps/applications/sink/qcc512x_qcc302x/common/depend_Headset_qcc512x_qcc302x/**
+apps/applications/sink/qcc512x_qcc302x/customer_ro_filesystem/**
+# header files from auto-generation module configuration file
+apps/applications/sink/*_def.h
+#
+apps/installed_libs/include/firmware_qcc512x_qcc302x/**.h
+apps/installed_libs/include/firmware_qcc512x_qcc302x/**/**.h
+apps/installed_libs/include/profiles/default_qcc512x_qcc302x/**/**.h
+apps/installed_libs/include/profiles/default_qcc512x_qcc302x/**.dbi
+
+apps/installed_libs/include/standard/**.h
+
+audio/kalimba/kymera/capabilities/cvc_send/*
+audio/kalimba/kymera/output_bundles/stre_rom_v02_release/download_cvc_send/*
+audio/kalimba/kymera/tools/KCSMaker/bundle/config/capabilities.cfgc
+audio/kalimba/kymera/tools/KCSMaker/bundle/download_cvc_send.bdlc
+audio/kalimba/kymera/tools/KCSMaker/out/*
+

@@ -25,6 +25,8 @@ NOTES
 #include <gaia.h>
 #include <pio_common.h>
 #include <audio.h>
+/* Another vendor command */
+#define GAIA_COMMAND_PLAY_PROMPT (0x02C0)
 
 #ifndef GATT_ENABLED
 #undef GATT_GAIA_SERVER

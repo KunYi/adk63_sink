@@ -1352,6 +1352,24 @@ static void gaia_alert_voice(uint8 payload_length, uint8 *payload)
         gaia_send_invalid_parameter(GAIA_COMMAND_ALERT_VOICE);
 }
 
+/*************************************************************************
+NAME
+    gaia_play_prompt
+
+DESCRIPTION
+    Act on a GAIA_COMMAND_PLAY_PROMPT request
+    always play the indicated voice prompt idx 0;
+    We have already established that theSink.num_audio_prompt_languages != 0
+
+*/
+static void gaia_play_prompt(void)
+{
+    TaskData *plugin = NULL;
+    plugin = (TaskData *) &csr_voice_prompts_plugin;
+    AudioPromptPlay(plugin, 12, TRUE, FALSE); // always play 12.idx, can queue, can't override
+    gaia_send_success(GAIA_COMMAND_PLAY_PROMPT);
+}
+
 
 /*************************************************************************
 NAME
@@ -4313,6 +4331,13 @@ static bool gaia_handle_control_command(Task task, GAIA_UNHANDLED_COMMAND_IND_T 
         else
             gaia_send_invalid_parameter(GAIA_COMMAND_ALERT_VOICE);
 
+        return TRUE;
+
+    case GAIA_COMMAND_PLAY_PROMPT:
+        if (num_lang == 0)
+            return FALSE;
+
+        gaia_play_prompt();
         return TRUE;
 
     case GAIA_COMMAND_SET_POWER_STATE:
