@@ -499,7 +499,7 @@
                     ShortId="digital_mic_1a"
                     Desc="Selects the digital microphone inputs when set."
                     ConfigGroupPath="./[@ShortId='audio']/[@ShortId='input']/[@ShortId='voice_microphone']/[@ShortId='voice_microphone_1a_parameters']"
-                    DefaultValue="false"/>
+                    DefaultValue="true"/>
             </StructElementConfigItem>
             <StructElementConfigItem
                 Id="Mic 1-b Params"
